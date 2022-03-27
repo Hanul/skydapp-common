@@ -1,4 +1,4 @@
-# skydapp
+# skydapp-common
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -6,7 +6,7 @@ DApp Framework
 
 ## Install
 ```
-yarn add skydapp
+yarn add skydapp-common
 ```
 
 ## License
