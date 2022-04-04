@@ -4,15 +4,15 @@ export default class Debouncer {
 
     constructor(
         private debounceTime: number,
-        private work: () => void,
+        private work: (...params: any) => void,
     ) { }
 
-    public run() {
+    public run(...params: any) {
         if (this.debounceTimeout !== undefined) {
             clearTimeout(this.debounceTimeout);
         }
         this.debounceTimeout = setTimeout(() => {
-            this.work();
+            this.work(...params);
         }, this.debounceTime);
     }
 }
