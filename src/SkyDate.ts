@@ -9,6 +9,14 @@ export default class SkyDate {
     public get hours() { return this.d.getHours(); }
     public get minutes() { return this.d.getMinutes(); }
     public get seconds() { return this.d.getSeconds(); }
+    public get time() { return this.d.getTime(); }
+
+    public set year(year: number) { this.d.setFullYear(year); }
+    public set month(month: number) { this.d.setMonth(month - 1); }
+    public set date(date: number) { this.d.setDate(date); }
+    public set hours(hours: number) { this.d.setHours(hours); }
+    public set minutes(minutes: number) { this.d.setMinutes(minutes); }
+    public set seconds(seconds: number) { this.d.setSeconds(seconds); }
 
     public get monthFormal() {
         const month = this.d.getMonth() + 1;
