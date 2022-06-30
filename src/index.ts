@@ -1,4 +1,4 @@
-export { default as EventContainer } from "./EventContainer";
+export { default as EventContainer, EventHandler } from "./EventContainer";
 export { default as Debouncer } from "./Debouncer";
 export { default as Waiter } from "./Waiter";
 export { default as SkyUtil } from "./SkyUtil";
